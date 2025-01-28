@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --Gradiens:hsl(6, 100%, 80%),hsl(335, 100%, 65%);
+    
+    /* Neutral */
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+    
+
+
+
+    --font-f: "Raleway", serif;
+
+    --fontS14: font-size: 14px;
+}
+
+
+body{
+    background: var(--Very-Dark-Blue);
+    font-family: "Raleway", serif;
+    font-size: 14px;
+
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: right 0vw bottom 0vh;
+    /* background-position:bottom 0px right 0px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*  */
+.fylo{
+    background: red;
+    margin-right: 20px;
+
+    padding: 10px;
+
+}
+
+.logo{
+
+}
+
+.icon-fylo{
+
+}
+
+/* utlizar sass */
+
+/*
+    Tu puedes Katherin
+    
+*/
+
+
+
+
+
+/*  */
+.gb{
+    background: greenyellow;
+
+}
+
+
+
+
+/* 
+.circle{
+
+width: 100%;
+height:100px;
+background-color: #000;
+barder-radius: 50%;
+
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+// la $variable puede tener el nombre que tu desees
+@for $iterador from 1 through 5{
+    
+    .circle-#{$iterador}{
+        animation-name : animacion#{$iterador};
+
+        @keyframes animacion#{$iterador} {
+            100%{
+                transform: translate(50% * $iterador);
+                -webkit-transform: translate(50% * $iterador);
+                -moz-transform: translate(50% * $iterador);
+                -ms-transform: translate(50% * $iterador);
+                -o-transform: translate(50% * $iterador);
+            }
+
+            // El ultimo circulo se reversa
+            @if $iterador == 5 {
+                animation-direction: alternate-reverse;
+
+            }
+        }        
+    }
+
+}
+*/
+
+
+/* 
+MIXIN
+//para arreglar una imagen
+
+@mixin arregar-imagen{
+    background:{
+        size: cover;
+        repeat: no-repeat;
+        positon:center; 
+    };
+}
+*/
+
+/* 
+    FUNCION (en css lo pasa de pixles a rem
+@use 'sass:math';
+
+    @function pixeles-rem($pixeles){
+        $rem: math.div(&pixeles, 16) * 1rem;
+    
+        @return $rem;
+    }
+
+
+    se utiliza 
+    nombre de la propiedad : nombre del documento, nombre de duncion (pixeles)
+
+    font-size:funtions.pixeles-rem(30)
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+

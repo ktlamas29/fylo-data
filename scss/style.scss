@@ -1,0 +1,249 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --Gradiens:hsl(6, 100%, 80%),hsl(335, 100%, 65%);
+    
+    /* Neutral */
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+    
+    --font-f: "Raleway", serif;
+}
+
+
+body{
+    background: var(--Very-Dark-Blue);
+    font-family: var(--font-f);
+    font-size:  14px;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @media (max-width: 320px) {
+        background: lightcoral;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        // background: red;
+
+        background-image: url("../images/bg-desktop.png");
+        background-repeat: no-repeat;
+        background-position:bottom -55px right 0px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        @media (max-width: 375px) {
+            // background: yellowgreen;
+            background-image: url("../images/bg-mobile.png");
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+
+        }
+        
+
+        
+        .fylo{
+            // background: green;
+            background: var(--Dark-Blue);
+            width: 300px;
+            height: 185px;
+            padding: 10px;
+
+            
+            margin-right: 20px;
+            border-top-right-radius: 120px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            @media (max-width: 375px){
+                background: burlywood;
+                margin: 20px 0;
+                width: 310px;
+
+            }
+
+
+            .logo{
+
+                img{
+                    margin: 10px;
+                }
+            }
+
+            .icon-fylo{
+                // background: blue;
+                width: 80%;
+                height: 50%;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+
+                .icon-document, 
+                .icon-folder, 
+                .icon-upload {
+                    // background: turquoise;
+                    background: var(--Very-Dark-Blue);
+                    padding: 10px;
+                    border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                
+                }
+
+                // .icon-folder{
+                
+                // }
+
+                // .icon-upload{
+                
+                // }
+            }
+        }
+
+
+
+        .gb{
+            //background: yellowgreen;
+            background: var(--Dark-Blue);
+            width: 450px;
+            height: 150px;
+            padding: 30px;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            position: absolute;
+            
+
+
+            position: relative;
+        
+
+            @media (max-width: 375px){
+                // background: red;
+                width: 310px;
+            }
+
+
+            .limi-gb {
+                position: absolute;
+                background: var(--Pale-Blue);
+                right: 25px;
+                top: -45px;
+                padding: 15px 15px;
+                border-radius:6px ;
+                -webkit-border-radius:6px ;
+                -moz-border-radius:6px ;
+                -ms-border-radius:6px ;
+                -o-border-radius:6px ;
+    
+                p {
+                    color: var(--Dark-Blue);
+                    font-size: 30px;
+                    font-weight: bold;
+    
+                    span {
+                    color: var(--Grayish-Blue);
+                    font-size: 15px;
+                    }
+                }
+
+                @media (max-width: 375px){
+                    top: 125px;
+                    right: 80px;
+                }
+            }    
+    
+    
+            .text-storage{
+
+                p{
+                    margin-bottom: 10px;
+                    color: var(--Pale-Blue);
+                }
+            }
+    
+            .range{
+                width: 390px;
+                height: 20px;
+                position: relative;
+                background-color: var(--Very-Dark-Blue);
+                border-radius: 16px;
+                -webkit-border-radius: 16px;
+                -moz-border-radius: 16px;
+                -ms-border-radius: 16px;
+                -o-border-radius: 16px;
+                padding: 2px;
+                margin-bottom: 10px;
+            
+                &::before{
+                        position: absolute;
+                        content: "";
+                        width: 295px;
+                        height: 15px;
+                        top: 50%;
+                        left: 2px;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                        background: linear-gradient(var(--Gradiens));
+
+                        @media (max-width: 375px){
+                            width: 73%;
+                        }
+                }
+
+                @media (max-width: 375px){
+                    width: 100%;
+                }
+            }
+    
+    
+            .bar-range{
+                display: flex;
+                justify-content: space-between;
+    
+                p{
+                    color: var(--Pale-Blue);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
